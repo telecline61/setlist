@@ -19,7 +19,7 @@ class ScSetlistPlugin {
         //add the shortcode
         add_shortcode('sc_setlist', array($this,'shortcode'));
     }
-
+    //register our post type
     public function registration() {
         register_post_type(
             'sc-setlist',
@@ -54,7 +54,7 @@ class ScSetlistPlugin {
             )
         );
     }
-    // shortcode function
+    // our shortcode function
     public function shortcode($atts) {
 
         ob_start();
@@ -80,7 +80,7 @@ class ScSetlistPlugin {
            }
     }
 
-    // enqueue function for nc numbers css - if needed
+    // enqueue function for our css
     public function enqueue() {
         wp_enqueue_style('sc-setlist', plugins_url('css/sc-setlist.css', __FILE__), null, '1.0');
     }
