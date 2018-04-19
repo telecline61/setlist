@@ -1,0 +1,31 @@
+.song-list {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700 !important;
+}
+.set-list {
+    padding: 0;
+    width: 40%;
+    margin: 0 auto 50px auto;
+    list-style-type: none;
+}
+.set-list li {
+    padding: 10px; 0;
+    text-align: center;
+}
+.set-list li a {
+    font-size: 22px;
+}
+@media only screen and (max-width: 960px){
+    .set-list {
+        width: 100%;
+    }
+    .set-list li a {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 660px){
+    .song-list {
+        margin-top: -30px;
+    }
+}
