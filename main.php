@@ -31,7 +31,7 @@ class ScSetlistPlugin {
                     'add_new_item' => __('Add New Song'),
                     'edit_item' => __('Edit Song'),
                     'new_item' => __('New Song'),
-                    'all_items' => __('All Song'),
+                    'all_items' => __('All Songs'),
                     'view_item' => __('View Song'),
                     'search_items' => __('Search Songs'),
                     'not_found' =>  __('No Songs'),
@@ -61,7 +61,7 @@ class ScSetlistPlugin {
            $query = new WP_Query( array(
                'post_type' => 'sc-setlist',
                'posts_per_page' => -1,
-               'order' => 'ASC',
+               'order' => 'DESC',
                'orderby' => 'date',
            ) );
            if ( $query->have_posts() ) { ?>
