@@ -70,7 +70,7 @@ class ScSetlistPlugin {
                    <?php while ( $query->have_posts() ) : $query->the_post();
                    $url = get_field( 'link_to_demo' );//ACF field ?>
                    <li class="item">
-                       <a href="<?php echo $url; ?>"><?php the_title(); ?></a>
+                       <a href="<?php echo $url; ?>" target="_blank"><?php the_title(); ?></a>
                    </li>
                    <?php endwhile;
                    wp_reset_postdata(); ?>
