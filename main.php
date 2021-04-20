@@ -1,7 +1,7 @@
 <?php
 /**
 * Plugin Name: Song Club Setlist
-* Description: Simple CPT Shortcode that allows for adding updating sond and links to their respective demos.
+* Description: Simple CPT Shortcode that allows for adding updating songs and links to their respective demos.
  * Version: 0.1
  * Author: Chris Cline
  * Author URI: http://www.christiancline.com
